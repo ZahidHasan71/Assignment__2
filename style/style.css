@@ -7,13 +7,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: #000000;
     color:#fff;
+    background-color: #000000;
 }
 /* share style */
-.bg-color{
+/* .bg-color{
     background-color: #000000;
-}
+} */
 .btn-active{
     border-radius: 46px;
     background: #E6533C;
@@ -22,11 +22,32 @@
 .d-flex{
     display: flex;
 }
+section{
+    margin-top: 100px;
+}
+.section-header{
+    text-align: center;
+}
+.section-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+.section-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-top: 14px;
+}
 /* share style end*/
 
 /* header style start */
+/* navbar start */
 .header{
-    padding: 50px 8%;
+    padding: 50px 12%;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .navbar{
     justify-content: space-between;
@@ -34,6 +55,8 @@
 .nav-title{
     color: #E6533C;
     font-style: italic;
+    font-size: 38px;
+    font-weight: 800;
 }
 .nav-items{
     list-style: none;
@@ -49,4 +72,59 @@
 li:first-of-type .nav-link {
     margin-left: 0;
 }
+/* navbar end */
+/* banner start */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    /* background-image: cover; */
+    background-repeat: no-repeat;
+    width: 60%;
+}
+/* habits start */
+.habits{
+    margin-top: 54px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.habit-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habit-item img{
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    width: 70%;
+}
+.habit-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+}
+.habits-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 10%;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 260px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* habits end */
+/* banner end */
 /* header style end */

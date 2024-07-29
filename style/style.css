@@ -8,16 +8,25 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color:#fff;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 /* share style */
-/* .bg-color{
+.bg-color{
     background-color: #000000;
-} */
+}
 .btn-active{
     border-radius: 46px;
     background: #E6533C;
     padding: 8px 20px;
+}
+.btn-primary{
+    border-radius: 46px;
+    background: #E6533C;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
 }
 .d-flex{
     display: flex;
@@ -47,7 +56,13 @@ section{
 /* navbar start */
 .header{
     padding: 50px 12%;
+    background-color: #000000;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+main{
+    padding: 0 12%;
+    background-color: #000000;
+
 }
 .navbar{
     justify-content: space-between;
@@ -83,7 +98,7 @@ li:first-of-type .nav-link {
     width: 50%;
 }
 .banner-img{
-    width: 50%;
+    width: 30%;
 }
 .banner-img img{
     /* background-image: cover; */
@@ -126,5 +141,38 @@ li:first-of-type .nav-link {
     margin-top: 10px;
 }
 /* habits end */
-/* banner end */
 /* header style end */
+/* run extra part start */
+.run-extra{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.run-content{
+    width: 60%;
+}
+.run-title{
+    font-size: 48px;
+    font-weight: 900;
+    max-width: 400px;
+}
+.run-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 480px;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.run-img{
+    width: 35%;
+}
+.run-img img{
+    margin-left: 10%;
+}
+/* run extra part end */

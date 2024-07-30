@@ -1,5 +1,6 @@
 /* Inter Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 /*  */
 
 *{
@@ -8,10 +9,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color:#fff;
-    /* background-color: #000000; */
 }
 /* share style */
-.bg-color{
+body{
     background-color: #000000;
 }
 .btn-active{
@@ -27,6 +27,14 @@
     font-weight: 600;
     border: none;
     outline: none;
+}
+.btn-secondary{
+    border-radius: 46px;
+    border: 1px solid #fff;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
 }
 .d-flex{
     display: flex;
@@ -54,15 +62,13 @@ section{
 
 /* header style start */
 /* navbar start */
-.header{
+header{
     padding: 50px 12%;
-    background-color: #000000;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.8), rgba(119, 119, 119, 0) 100%);
 }
 main{
     padding: 0 12%;
-    background-color: #000000;
-
 }
 .navbar{
     justify-content: space-between;
@@ -96,6 +102,30 @@ li:first-of-type .nav-link {
 }
 .banner-content{
     width: 50%;
+}
+.banner-title{
+    color: rgb(255, 255, 255);
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    max-width: 600px;
+}
+.banner-title span{
+    font-family: "Allura", cursive;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+.banner-description{
+    margin: 28px 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
 .banner-img{
     width: 30%;
@@ -176,3 +206,36 @@ li:first-of-type .nav-link {
     margin-left: 10%;
 }
 /* run extra part end */
+/* out team start */
+.our-team{
+
+}
+.section-head{
+    text-align: center;
+    max-width: 530px;
+}
+.team-persons{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 750px;
+    margin-top: 58px;
+}
+.person{
+    position: relative;
+    height: 350px;
+}
+.person img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.person-info{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+/* out team end */

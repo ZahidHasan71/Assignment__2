@@ -238,4 +238,62 @@ li:first-of-type .nav-link {
     bottom: 20px;
     left: 20px;
 }
+.person-desgnation{
+    color: rgba(255, 255, 255, 0.5);
+}
 /* out team end */
+
+/* footer */
+.footer{
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 88px;
+    padding: 66px 12% 35px;
+}
+.footer-left{
+    width: 40%;
+}
+.footer-logo{
+    font-style: italic;
+    font-size: 70px;
+    font-weight: 800;
+    color:#E6533C;
+    margin-bottom: 20px;
+}
+.footer-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.footer-right{
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 78px;
+}
+.left-links{
+    width: 50%;
+    margin-left: 80px;
+}
+.right-links{
+    width: 50%;
+}
+.links{
+    margin-top: 40px;
+}
+.links li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.links li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.copyright p{
+    margin-top: 35px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}

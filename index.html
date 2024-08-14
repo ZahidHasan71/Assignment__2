@@ -27,8 +27,8 @@
                 <h1 class="banner-title">Get body in <span>shape</span> & stay healthy</h1>
                 <p class="banner-description">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and </p>
                 <div class="banner-btn">
-                    <button class="btn-primary">Get Started</button>
-                    <button class="btn-secondary">Watch Video</button>
+                    <button class="btn-primary">Join Now!</button>
+                    <button class="btn-secondary">Download App</button>
                 </div>
             </div>
             <div class="banner-container">
@@ -94,10 +94,11 @@
         </section>
         <!-- run extra end-->
         <!-- BMI Calculation part start -->
-        <!-- <section class="bmi-header">
+        <section class="bmi-header">
             <h1 class="section-title">BMI Calculator</h1>
             <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
         </section>
+        
         <section class="bmi-calculation d-flex">
             <div class="bmi-chart">
                 <h1 class="chart-title">BMI Calculator Chart</h1>
@@ -128,6 +129,7 @@
                     </tbody>
                 </table>
             </div>
+        
             <div class="bmi-calculator">
                 <h1 class="chart-title">Calculate your BMI</h1>
                 <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -137,24 +139,26 @@
                         <input type="number" name="weight" placeholder="Weight (kg)" required>
                     </div>
                     <div class="input-box">
-                        <input type="number" name="height" placeholder="Height (cm)" required>
-                        <select id="country" name="country">
-                            <option value="australia">Sex</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
+                        <select name="sex" required>
+                            <option value="" disabled selected>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                         </select>
+                        <input type="number" name="age" placeholder="Age" required>
                     </div>
                     <div class="input-box">
-                        <select id="country" name="country" class="activity">
-                            <option value="australia">Select an activity factor</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                          </select>
+                        <select name="activity" class="activity" required>
+                            <option value="" disabled selected>Select an activity factor</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="lightly_active">Lightly active</option>
+                            <option value="moderately_active">Moderately active </option>
+                            <option value="very_active">Very active</option>
+                        </select>
                     </div>
-                    <button class="btn-primary">Calculate</button>
+                    <button class="btn-primary" type="submit">Calculate</button>
                 </form>
             </div>
-        </section> -->
+        </section>
         <!-- BMI Calculation part end -->
         <!-- our team start -->
         <section class="our-team">

@@ -563,7 +563,7 @@ td {
         bottom: 200px;
         left: -5px;
     }
-    /* responsive banner start */
+    /* responsive habits start */
     .habits-part{
         margin-top: 30px;
     }
@@ -574,30 +574,72 @@ td {
         font-size: 32px;
         font-weight: 900;
     }
-    .habits-part .section-description{
-
-    }
     .habits {
-        grid-template-columns: 1fr; /* 2 columns */
-        padding: 0 5%; /* Reduce padding */
+        grid-template-columns: 1fr; 
+        padding: 0 5%; 
     }
 
     .habit-item img {
-        width: 50%; /* Increase the image size slightly */
+        width: 50%; 
     }
 
     .habit-title {
-        font-size: 18px; /* Slightly reduce font size */
-        margin-top: 20px; /* Reduce top margin */
+        font-size: 18px; 
+        margin-top: 20px; 
     }
 
     .habits-description {
-        font-size: 14px; /* Reduce font size */
-        margin-top: 8px; /* Reduce top margin */
-        max-width: 50%; /* Allow full width for the description */
+        font-size: 14px; 
+        margin-top: 8px; 
+        max-width: 50%; 
     }
 
     .habits {
-        grid-gap: 15px; /* Reduce the gap between grid items */
+        grid-gap: 15px; 
     }
+    /* responsive habits end */
+    /* responsive run-extra start */
+    .run-extra-section{
+        padding: 0 8%;
+    }
+    .run-extra{
+        border-radius: 18px;
+        background: rgb(34, 34, 34);
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .run-content{
+        width: 100%;
+    }
+    .run-title{
+        font-size: 32px;
+        font-weight: 900;
+        max-width: 200px;
+    }
+    .run-description{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: rgba(255, 255, 255, 0.5);
+        max-width: 480px;
+        margin-top: 14px;
+        margin-bottom: 34px;
+    }
+    .run-content .btn-primary{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .run-img{
+        width: 100%;
+    }
+    .run-img img{
+        /* margin-left: 10%; */
+        width: 100%;
+        margin: 0;
+    }
+    /* responsive run-extra end */
 }

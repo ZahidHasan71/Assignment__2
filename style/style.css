@@ -487,8 +487,9 @@ td {
 
 
 /* responsive part start */
-/* responsive nav start */
+
 @media screen and (max-width: 576px) {
+    /* responsive nav start */
     .header{
         padding: 36px 6%;    
     }
@@ -498,7 +499,8 @@ td {
     .nav-items{
         display: none;
     }
-
+    /* responsive nav end */
+    /* responsive banner start */
     .banner-title{
 
     }
@@ -560,5 +562,42 @@ td {
     .banner-container .bottom-left{
         bottom: 200px;
         left: -5px;
+    }
+    /* responsive banner start */
+    .habits-part{
+        margin-top: 30px;
+    }
+    .habits-part .section-header{
+        padding: 0 8%;
+    }
+    .habits-part .section-title{
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .habits-part .section-description{
+
+    }
+    .habits {
+        grid-template-columns: 1fr; /* 2 columns */
+        padding: 0 5%; /* Reduce padding */
+    }
+
+    .habit-item img {
+        width: 50%; /* Increase the image size slightly */
+    }
+
+    .habit-title {
+        font-size: 18px; /* Slightly reduce font size */
+        margin-top: 20px; /* Reduce top margin */
+    }
+
+    .habits-description {
+        font-size: 14px; /* Reduce font size */
+        margin-top: 8px; /* Reduce top margin */
+        max-width: 50%; /* Allow full width for the description */
+    }
+
+    .habits {
+        grid-gap: 15px; /* Reduce the gap between grid items */
     }
 }

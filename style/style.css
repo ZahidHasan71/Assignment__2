@@ -67,11 +67,16 @@ header{
     background-color: rgba(0, 0, 0, 0.8);
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.8), rgba(119, 119, 119, 0) 100%);
 }
-main{
+/* main{
     padding: 0 12%;
-}
+} */
+
 .navbar{
     justify-content: space-between;
+    align-items: center;
+}
+.nav-icon{
+    display: none;
 }
 .nav-title{
     color: #E6533C;
@@ -127,14 +132,78 @@ li:first-of-type .nav-link {
     line-height: 24px;
     letter-spacing: 0.5px;
 }
+.banner-btn .btn-secondary{
+    margin-left: 30px;
+}
 .banner-img{
-    width: 30%;
+    width: 22%;
 }
 .banner-img img{
     /* background-image: cover; */
     background-repeat: no-repeat;
-    width: 60%;
+    width: 50%;
 }
+.banner-container {
+    position: relative;
+    display: inline-block;
+}
+
+.banner-img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    margin-right: 100px;
+}
+
+.count-item {
+    position: absolute;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    padding: 16px 24px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.count-item.top-right {
+    top: 160px;
+    right: 10px;
+    text-align: left;
+}
+
+.count-item.bottom-left {
+    bottom: 77px;
+    left: -60px;
+    text-align: left; 
+    display: flex;
+    align-items: center;
+
+}
+.count-icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #E6533C;
+    margin-right: 10px;
+}
+
+.count-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.count-description {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    }
 /* habits start */
 .habits{
     margin-top: 54px;
@@ -142,6 +211,7 @@ li:first-of-type .nav-link {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    padding: 0 12%;
 }
 .habit-item{
     display: flex;
@@ -173,6 +243,9 @@ li:first-of-type .nav-link {
 /* habits end */
 /* header style end */
 /* run extra part start */
+.run-extra-section{
+    padding: 0 12%;
+}
 .run-extra{
     border-radius: 18px;
     background: rgb(34, 34, 34);
@@ -200,15 +273,128 @@ li:first-of-type .nav-link {
     margin-bottom: 34px;
 }
 .run-img{
-    width: 35%;
+    width: 40%;
 }
 .run-img img{
     margin-left: 10%;
+    width: 90%;
 }
 /* run extra part end */
+/* BMI Calculation part start */
+.bmi-header{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 450px;
+
+}
+
+.bmi-header .section-description {
+    max-width: 640px;
+}
+.bmi-calculation{
+    background: #222222;
+    padding: 52px 12%;
+    margin-top: 100px;
+}
+.bmi-chart{
+    width: 50%;
+}
+.bmi-chart .chart-title{
+    margin-bottom: 52px;
+}
+.bmi-chart table{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+}
+.bmi-chart table th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 43px;
+}
+.bmi-chart table td {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.bmi-calculator{
+    width: 50%;
+}
+.bmi-calculator .section-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-bottom: 44px;
+}
+.bmi-calculator {
+
+}
+
+.chart-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.bmi-form {
+
+}
+.input-box{
+    display: flex;
+}
+.input-box input{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 16px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+}
+.input-box select{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 16px 25px;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+}
+.input-box .activity{
+   width: 100%;
+}
+
+
+
+/* BMI Calculation part end */
 /* out team start */
 .our-team{
-
+    padding: 0 12%;
 }
 .section-head{
     text-align: center;
@@ -296,4 +482,83 @@ li:first-of-type .nav-link {
     margin-top: 35px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* responsive part start */
+/* responsive nav start */
+@media screen and (max-width: 576px) {
+    .header{
+        padding: 36px 6%;    
+    }
+    .nav-icon{
+        display: block;
+    }
+    .nav-items{
+        display: none;
+    }
+
+    .banner-title{
+
+    }
+    .banner{
+        flex-direction: column;
+        margin-top: 50px;
+
+    }
+    .banner-content{
+        margin-left: 0;
+        width: 100%;
+    }
+    .banner-container{
+        margin-top: 50px;
+    }
+    .banner-title{
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 120%;
+        letter-spacing: 0%;
+        max-width: 250px;
+    }
+    .banner-title span{
+        font-family: "Allura", cursive;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 120%;
+        letter-spacing: 0%;
+    }
+    .banner-description{
+        margin: 28px 0;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    .banner-btn{
+        display: flex;
+        
+    }
+    .banner-btn .btn-secondary{
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 30px;
+    }
+    .banner-btn .btn-primary{
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 30px;
+    }
+    .banner-container .top-right{
+        top: 19px;
+        right: -15px;
+        text-align: left;
+    }
+    .banner-container .bottom-left{
+        bottom: 200px;
+        left: -5px;
+    }
 }

@@ -407,7 +407,6 @@ td {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    height: 750px;
     margin-top: 58px;
 }
 .person{
@@ -642,4 +641,69 @@ td {
         margin: 0;
     }
     /* responsive run-extra end */
+    /* responsive bmi calculation part start */
+    .bmi-header{
+        margin-top: 100px;
+        text-align: left;
+        margin-left: 0;
+        padding: 0 8%;
+    
+    }
+    
+    .bmi-header .section-description {
+        max-width: 540px;
+    }
+    .bmi-calculation{
+        flex-direction: column;
+    }
+
+    
+    /* responsive bmi calculation part end */
+    /* responsive Our Team start */
+    .our-team{
+        padding: 0 8%;
+    }
+    .section-head{
+        text-align: center;
+        max-width: 530px;
+    }
+    .our-team .section-title{
+        font-size: 32px;
+    }
+    .team-persons{
+        grid-template-columns: 1fr;
+    }
+    
+
+    /* responsive Our Team end */
+    /* responsive footer part start */
+    .footer{
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 88px;
+        padding: 50px 8% 35px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-right{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .left-links{
+        width: 100%;
+        margin-left: 0;
+    }
+    .right-links{
+        width: 100%;
+    }
+
+
+
+    /* responsive footer part end */
 }
